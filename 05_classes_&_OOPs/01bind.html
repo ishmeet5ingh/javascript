@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked</button>
+    <script>
+        class React{
+            constructor(){
+                this.library = "React" // iska reference
+                this.server = "https://localhost:300" // iska reference binding se aayega eventlistener ke pass
+                
+                
+                //requirement
+                document
+                    .querySelector('button')
+                    .addEventListener('click', this.handleClick
+                    .bind(this))// this.library and this.server are attached to the callback and trigger on click nothing is override
+            }
+            handleClick(){
+                console.log("button clicked");
+                console.log(this);
+                console.log(this.server);
+
+            } 
+        }
+
+        const app = new React()
+        console.log(app)
+    </script>
+</body>
+</html> 
