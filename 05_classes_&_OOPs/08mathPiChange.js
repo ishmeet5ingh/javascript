@@ -39,13 +39,14 @@ const course = {
 }
 
 const des = Object.getOwnPropertyDescriptor(course, "duration");
-//'Object.defineProperty()' is a method in JavaScript that allows you to add a new property or modify an existing property on an object with more control over its behavior. This method provides fine-grained control over various property attributes, such as enumerability, writability, and configurability.
 
 
 // console.log(des)
 
 for(let [key, value] of Object.entries(course)){
     Object.defineProperty(course, key,{
+        //'Object.defineProperty()' is a method in JavaScript that allows you to add a new property or modify an existing property on an object with more control over its behavior. This method provides fine-grained control over various property attributes, such as enumerability, writability, and configurability.
+
         writable: false
     })
     console.log(`${key} : ${value}`)

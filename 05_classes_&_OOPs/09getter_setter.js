@@ -21,7 +21,8 @@ class User {
     //     this.password = value // problem // same for getter 
     // }// want to set any value inside the class.
     set password(value){ // parameter is mendatory
-        this._password = value // solution
+        this._password = value // create a property. // private property
+        // solution
     }// want to set any value inside the class.
 }
 

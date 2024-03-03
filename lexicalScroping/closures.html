@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure and lexical scope</title>
+</head>
+<body style="background-color: #313131;">
+
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    <script>
+        // function outer(){
+        //     let username = "ishmeet"
+        //     function inner(){
+        //         console.log("my name is ", username);
+        //     }
+        //     inner()
+        // }
+        // console.log("too outer", username)
+
+        // Lexical Scope -------->
+        // * Lexical scope is a fundamental concept in programming that determines the accessibility of variables and functions within a program. 
+        // * In simple terms, the lexical scope is the scope of a variable or function based on where it is defined in the source code
+        // * inner function has the access of scope of outer function
+
+
+        // Closure --------------->
+
+        function makeFunc(){
+            const name = "Mozilla";
+            function displayName(){
+                console.log(name);
+            }
+            return displayName;
+        }
+
+        // although function's execution context is removed but memory role is there 
+        // 2 -> memory , single thread execution
+        // memory ka reference ka role aajata hai yaha.
+
+        const myfunc = makeFunc()
+        // what this myfunc do when we execute makeFunc() then it returns displayName toh sirf displayName nahi jayega agar uska outer function exist krta hai toh uska bhi scope jayega this is important
+
+        myfunc(); // name will display // pura lexical scope hi return hota hai
+        
+        //defination ->
+
+        //A closure is the combination of a function bundled together (enclosed) with reference to its surrounding state (the lexical environment.). In other words, a closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+
+        function clickHandler(color){
+      /* 1st example */      return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+     /* 2nd example */   // document.body.style.backgroundColor = `${color}`
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+
+        // In your /* 1st example */ with the clickHandler function, you are returning a function from clickHandler, and that returned function is what gets assigned to onclick clickhandler holding the function reference. This is important because it ensures that the document.body.style.backgroundColor = ${color}`` code is executed when the button is clicked, not when the clickHandler function is defined.
+
+        // In the /* 2nd example */, where you directly assign the statement document.body.style.backgroundColor = ${color}`` to onclick, it's not wrapped in a function. In this case, the assignment is immediately executed when the script runs, and the result (which is undefined because you are not returning anything) is assigned to onclick. This behavior is not what you want for an event handler.
+    </script>
+</body>
+</html>
