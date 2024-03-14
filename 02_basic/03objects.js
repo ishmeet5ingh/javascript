@@ -5,7 +5,7 @@
 
  // object literals
 
- const mysym = Symbol("key1");
+ const mysym = Symbol("key1"); // typeof - symbol
  
  const jsuser = {
     name: "Hitesh", // by default name is also string
@@ -17,10 +17,11 @@
     lastLogindays: ["monday", "Saturday"]
  }
  
-//  console.log(jsuser.email)
+ console.log(jsuser.email)
 //  // or 
-//  console.log(jsuser["full_name"])
-//  console.log(jsuser[mysym]) // 
+// console.log("undefined" + jsuser.full_name) // gives undefined because "full_name"
+ console.log(jsuser["full_name"]) // right way
+ console.log(jsuser[mysym]) // 
  
 //  console.log(typeof mysym)
  
@@ -37,7 +38,8 @@ jsuser.greeting = function(){
 
 console.log(jsuser.greeting())
 
-const emptyObj = {}
+const emptyObj = {1: "1"}
+console.log(Object.keys(emptyObj))
 
 if(Object.keys(emptyObj).length === 0){
     console.log("Object is empty");

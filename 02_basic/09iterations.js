@@ -36,6 +36,12 @@ const myObject = {
 }
 
 for(const key in myObject){ // also used in array 
-    // console.log(`${key} := ${myObject[key]}`)
+    console.log(`${key} := ${myObject[key]}`)
 }
 
+// same 
+for(const [key, value] of Object.entries(myObject)){ // also used in array 
+    console.log(`${key} := ${value}}`)
+}
+
+// remove the unique values.

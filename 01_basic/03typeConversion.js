@@ -55,13 +55,13 @@ let gamecounter = 100
 
 //relatoinal operations => (== =< =>)
 // while comparing datatype do check 
-// data types are compatible of not
+// data types are compatible or not
 
 console.log("2" > 3) //automatically convert the string in number
 console.log(null == 0)
-console.log(null >= 0) // this work differently from from equality operator
+console.log(null >= 0) // this work differently from equality operator
 console.log(null <= 0) // value conversion
 
 // === check value strictly
 
-console.log("2" === 2)
+console.log("2" == 2)

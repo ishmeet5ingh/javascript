@@ -1,6 +1,6 @@
 // *******************EventLoop******************
 // see 01browser image in same folder first ------------>
-// to access all things shown in outflow arror we need apis
+// to access all things shown in outflow arrow we need apis
 // see 02webApis image ---------------->
 
 // webapis-------------------->
@@ -11,7 +11,7 @@
 */
 // 04callback queue and eventloop
 
-// ************event loop explaination ***************
+// ************ event loop explaination ***************
 
 /*
     -> Checks callback Queue and if there is something
@@ -37,7 +37,7 @@ why we need callBack queue---->
     * Suppose user is clicking a button again and again
     * then callback queue store that cb() in queue order 
     * And execute it one by one
-    * that is by callback queue is there
+    * that is y callback queue is there
     * And eventLoop check continuously both(cs and cb)
     * 
 */

@@ -28,45 +28,45 @@ promiseOne.then((/*callback*/ )=>{
     console.log("promise consumed")
 })
 
-// ---------------promise 2------------------>
+// // ---------------promise 2------------------>
 
 new Promise((resolve, reject)=>{
     setTimeout(() => {
         console.log("Async task 2")
         resolve()
-    }, 1000);
+    }, 2000);
 }).then(()=>{
     console.log("promise 2 consumed")
 })
 
 
-// ------------------promise 3--------------->
+// // ------------------promise 3--------------->
 
 const promiseThree = new Promise((resolve, reject)=>{
     setTimeout(() => {
         resolve({username: "Ishmeet", email: "ishmeet@gmail.com"})
-    }, 1000);
+    }, 3000);
 })
 
 promiseThree.then((user)=>{
     console.log(user.email)
 })
 
-// ----------------promise 4------------------->
+// // ----------------promise 4------------------->
 
 const promiseFour = new Promise((resolve, reject)=>{
     setTimeout(() => {
-        let error = true
+        let error = false
         if(!error){
             resolve({username: "ishmeet", password: "123"})
         }else{
             reject('ERROR: Something went wrong')
         }
-    }, 2000);
+    }, 4000);
 })
 
 
-// callback hell----> jitne chahe utne .then()
+// promise chaining----> jitne chahe utne .then()
 promiseFour.then((user)=>{
     console.log(user);
     return user.username
@@ -77,10 +77,10 @@ promiseFour.then((user)=>{
 }).finally(()=> console.log("The promise is either resolved or rejected"))
 // finally executed everytime (resolve or rejected)
 
-// chaining ----> jo uper wale .then() se value return 
-                // hoker aayegi vohi new chain me aayegi
+// // chaining ----> jo uper wale .then() se value return 
+//                 // hoker aayegi vohi new chain me aayegi
 
-// Data Base connection me useful hai
+// // Data Base connection me useful hai
 
 const promiseFive = new Promise((resolve, reject)=>{
     setTimeout(() => {
@@ -90,11 +90,11 @@ const promiseFive = new Promise((resolve, reject)=>{
         }else{
             reject("ERROR: JS went wrong")
         }
-    }, 2000);
+    }, 5000);
 })
-// promise happens in future (async code)
+// // promise happens in future (async code)
 
-// to handle a promise we have to ways then().catch / async await
+// // to handle a promise we have to ways then().catch / async await
 
 async function consumePromiseFive(){
    try {
@@ -106,9 +106,9 @@ async function consumePromiseFive(){
 
 }
 
-consumePromiseFive()
+// consumePromiseFive()
 
-// api call (github api)
+// // api call (github api)
 
 // const apiCallGithub = async ()=>{
 const getAllUser = async()=>{
@@ -124,7 +124,7 @@ const getAllUser = async()=>{
 
 getAllUser()
 
-// doing same thing in .then().catch()
+// // doing same thing in .then().catch()
 
 fetch('https://api.github.com/users/ishmeet5ingh/followers')
 .then((response)=>{
@@ -134,6 +134,31 @@ fetch('https://api.github.com/users/ishmeet5ingh/followers')
     console.log(data)
 })
 .catch((error)=> console.log(error))
+
+// practice promise
+
+const promiseSix = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        let err = false
+        if(!err){
+            resolve({username: "ishmeet", rollno: "21BCA048"})
+        }else{
+            reject("Something went wrong")
+        }
+    }, 6000)
+})
+
+promiseSix
+.then((user)=>{
+    console.log(user)
+    return user.rollno
+}).then((username)=>{
+    console.log(username)
+}).catch((error)=>{
+    console.log(`Error : ${error}`)
+}).finally(()=>{
+    console.log("default")
+})
 
 
 

@@ -1,7 +1,8 @@
 // events run in sequence, js is sequencially run language
 // invoke on activity.
 // don't write .onClick="/*code*/" events in html, when project scale problems occur
-// eventListeners give ablitiy of propogation
+// eventListeners give ablitiy of propagation
+
 
 //attachEvent()
 //jQuery - on
@@ -18,6 +19,7 @@ document.getElementById('').addEventListener('click', function(e){
 // -> clientX, clientY
 // -> altkey, ctrlKey, shiftKey, keyCode
 
+//Propagation -> In JavaScript, "propagation" typically refers to event propagation, which is the mechanism by which events (such as user interactions) are handled and processed through the DOM (Document Object Model) hierarchy.
 
 
 },false)// sometimes can't done without false
@@ -42,8 +44,7 @@ document.getElementById('images').addEventListener('click', function(e){
 
 document.getElementById('owl').addEventListener('click', function(e){
     console.log("owl clicked")
-    e.stopPropagation();
-    // event will bubble and don't go to the top element
+    e.stopPropagation(); // event will bubble and don't go to the top element
 }, false)
 
 
@@ -72,7 +73,7 @@ document.getElementById('google').addEventListener('click', function(e){
 
 // e.target.parentNode - select the parent of the element
 /* 
-    example => what to remove the list item in which there is a img
+    example => want to remove the list item in which there is a img
     so target is img that is why we are using .parentNode
 */
 // e.target.tagName - select the tagName

@@ -19,8 +19,9 @@ let isLoggedIn = false
 // undefined => not yet assign
 // symbol => unique
 
-console.log(typeof 99999999999999999999999n) // undefined
-console.log(typeof undefined) // object
+console.log(typeof 99999999999999999999999n) // bigint
+console.log(typeof null) // object
+console.log(typeof undefined) // undefined
 
 
 

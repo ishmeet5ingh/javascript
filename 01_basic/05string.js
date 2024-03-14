@@ -1,6 +1,6 @@
 const name = "hitesh"
 //or
-const gameName = new String("hiteshhc"); //object of string
+const gameName = new String("hiteshhc"); // object of string
 
 // console.log(typeof gameName); //object
 // console.log(typeof name) // string
@@ -15,16 +15,16 @@ const repocount = 50;
 // console.log(gameName.charAt(1))
 // console.log(gameName.indexOf('t'))
 // const newString = gameName.substring(0, 4)
-const newString2 = gameName.slice(-7, 4)
+const newString2 = gameName.slice(-7, 7)
 // console.log(newString2)
 
 const newStringOne = "      hitesh      c   "
-console.log(newStringOne)
-console.log(newStringOne.trim()) // remove starting and end spaces
+// console.log(newStringOne)
+// console.log(newStringOne.trim()) // remove starting and end spaces
 
 const url = "https:/hitesh.com/hitesh%20choudhary";
 
-console.log(url.replace('%20', '_'))
-console.log(url.includes('hitesh'))
+// console.log(url.replace('%20', '_'))
+// console.log(url.includes('hitesh'))
 
-console.log(url.split('/'))// spliting by '/' this
+// console.log(url.split('/'))// spliting by '/' this

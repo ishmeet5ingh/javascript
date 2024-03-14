@@ -24,17 +24,18 @@ const myArr2 = [0, 1, 3, 5, 6, 6];
 //slice, splice
 
 // console.log("A ", myArr)
+const myArr3 = [0, 1, 3, 5, 6, 6];
+const myn1 = myArr3.slice(1, 3) // not includes the 3rd index 
 
-const myn1 = myArr.slice(1, 3) // not includes the 3rd index
-
-// console.log(myn1);
-// console.log("B ", myArr)
+console.log(myn1);
+// console.log(myArr3)
+console.log("B ", myArr)
 
 
 //includes 3rd remove 1, 3, 5 
-const myn2 = myArr.splice(1, 3)  // remove the elements in a range
-// console.log("c ", myArr)
-// console.log(myn2)
+const myn2 = myArr3.splice(1, 3)  // remove the elements in a range
+console.log("c ", myArr)
+console.log(myn2)
 
 // const newarray = myArr.concat(myArr2) 
 // console.log(newarray)
@@ -47,9 +48,9 @@ const myn2 = myArr.splice(1, 3)  // remove the elements in a range
 // const real_another_array = another_array.flat(Infinity); // remove all inner array and make single elements of it
 // console.log(real_another_array)
 
-console.log(Array.isArray("hitesh"))
-console.log(Array.from("hitesh"))
-console.log(Array.from({name: "hitesh"})) // interesting case
+// console.log(Array.isArray("hitesh"))
+// console.log(Array.from("hitesh"))
+// console.log(Array.from({name: "hitesh"})) // interesting case
 
 let score1 = 100
 let score2 = 200

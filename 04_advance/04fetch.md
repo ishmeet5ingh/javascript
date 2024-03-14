@@ -9,7 +9,7 @@ but as the web grows, it become to difficult to work with
 the js frameworks, notably jquery, had to abstract to
 make implementation and sucess / error handling smoother
 
-* after that fetch library introduce for the api    handling 
+* after that fetch library introduce for the api  handling 
 don't need to right XMLHttpRequest
 
 * In a question answer by one node's core contributors 
