@@ -6,7 +6,7 @@ class User {
         this.email = email;
         this.password = password;
         console.log("hello")
-    } // execute authometically as the instance is       created
+    } // execute authometically as the instance is created
 // method in class
     encryptPassword(){
         return `${this.password}abc`

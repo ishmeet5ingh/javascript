@@ -23,7 +23,7 @@ document.getElementById('').addEventListener('click', function(e){
 
 
 },false)// sometimes can't done without false
-// true krdo ya false new difference
+// true krdo ya false no difference
 /* event(propogation) false, true -> 
     -> two context 1) event bubbling
 

@@ -5,7 +5,7 @@ coding.forEach((element, index, arr) => {
 });
 
 const values = coding.forEach( (item) =>{
-    // console.log(item);
+    // console.log(item); 
     return item; // forEach don't return anything.
 })
 

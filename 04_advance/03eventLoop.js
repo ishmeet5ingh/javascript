@@ -19,8 +19,7 @@
 
     -> then call stack quickly execute that callback
     -> when callstack is emply then only the cb()
-        waiting in the callback queue will comes in the
-        call stack.
+        waiting in the callback queue will comes in the call stack.
 
 */
 
@@ -48,20 +47,17 @@ why we need callBack queue---->
 
     * we have microtask queue ---->
     -> this queue have higher priority than the cb queue
-    -> here also Event Loop do the same work
-    -> once the global execution context is poped out of the 
-        callstack then only cb in micro or cb queue pushed 
-        in the callstack by event loop.
-    -> 10000 lines code bhi ho koi dikat nahi pehle global 
+    -> here also Event Loop do the same work.
+    -> once the global execution context is poped out of the callstack then only cb in micro or cb queue pushed in the callstack by event loop.
+    -> 10000 lines code bhi ho koi dikat nahi pehle global. 
         execution context will empty
 */
 
 
 /*
-    what can comes under microtask queue--------------->
+    what can comes under microtask queue --------------->
 
-    * All the callback function which comes through promises
-        will come under microtask queue
+    * All the callback function which comes through promises will come under microtask queue
     
     see 06 image
     

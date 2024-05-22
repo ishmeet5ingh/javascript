@@ -5,8 +5,7 @@
                each operation waits for the last one to complete before executing
                
 Single threaded lang -----> JavaScript is often referred to as a "single-threaded" language 
-because it operates on a single thread of execution within 
-a web browser or a Node.js environment. 
+because it operates on a single thread of execution within a web browser or a Node.js environment. 
 This means that it can only perform one task at a time in a single sequence. 
 This is in contrast to multi-threaded languages, 
 where multiple threads of execution can operate independently.
@@ -30,7 +29,7 @@ A thread is like an individual sequence of instructions that the central process
                     -> read file Async
 */
  
-// Async APIs -settimeout, setInterval
+// Async APIs -setTimeout, setInterval
 
 /* 
 Register Call back -> registered all things like when to execute a code 

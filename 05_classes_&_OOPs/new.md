@@ -4,7 +4,7 @@
 
 - For invoking the constructor and creating new instance every single time no matter how many time u use the new keyword new copy of function object is created
 
-- Also take care of this keyword
+- Also take care of this keyword.
 
 - Look image 03 -> if we don't use new keyword at line 9 then 'this' in the constructor function points to the window object and in node pointing to nothing that is why its saying undefined
 

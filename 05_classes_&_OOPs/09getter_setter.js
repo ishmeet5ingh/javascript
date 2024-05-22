@@ -37,5 +37,5 @@ const hitesh = new User("ishmeet@singh.ai", "abc")
 console.log(hitesh.password)
 console.log(hitesh.email)
 
-// if we don't want to give the access of password to anyuser the we use getters and setters
+// if we don't want to give the access of password to anyuser then we use getters and setters
 

@@ -1,6 +1,6 @@
 /* ************** functions ***************** */
 
-function sayMyname(username = "sam"){ // this is function definaiton
+function sayMyname(username = "sam"){ // this is function definition
     console.log(`${username}`)
 }
 

@@ -21,27 +21,40 @@
     4           DONE                The operation is complete       
 
     <script>
-    const requestUrl = 'https://api.github.com/users/ishmeet5ingh'
-    const xhr = new XMLHttpRequest() // a method, states are present, data request send and receieve
-    xhr.open('GET', requestUrl)
-    // to call it xhr.send()
-    xhr.onreadystatechange = function(){
-        console.log(xhr.readyState)
-        if(xhr.readyState === 4){
-            const data = JSON.parse(this.responseText)
-            console.log(typeof data.followers)
-        }
-    }
+    // const requestUrl = 'https://api.github.com/users/ishmeet5ingh'
+    // const xhr = new XMLHttpRequest() // a method, states are present, data request send and recieve
+    // xhr.open('GET', requestUrl)
+    // // to call it xhr.send()
+    // xhr.onreadystatechange = function(){
+    //     console.log(xhr.readyState)
+    //     if(xhr.readyState === 4){
+    //         const data = JSON.parse(this.responseText)
+    //         console.log(typeof data.followers)
+    //         console.log(data)
+    //     }
+    // }
     // console.log(xhr.readyState)
-    xhr.send();
+    // xhr.send();
 
-    console.log() // is may or may not be the part of js.
+    // console.log() // is may or may not be the part of js.
     // browser debugger tool.
     // injected by runtime
 
     // js run by node js runtime environment also browser
     // v8 engine for js 
     
+
+    const reqUrl = "https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', reqUrl);
+
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(data)
+        }
+    }
+    xhr.send()
     </script>
 
 </body>

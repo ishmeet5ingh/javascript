@@ -17,11 +17,11 @@
     lastLogindays: ["monday", "Saturday"]
  }
  
- console.log(jsuser.email)
+//  console.log(jsuser.email)
 //  // or 
 // console.log("undefined" + jsuser.full_name) // gives undefined because "full_name"
- console.log(jsuser["full_name"]) // right way
- console.log(jsuser[mysym]) // 
+//  console.log(jsuser["full_name"]) // right way
+//  console.log(jsuser[mysym]) 
  
 //  console.log(typeof mysym)
  
@@ -33,10 +33,10 @@ jsuser.name = "hello" //
 
 
 jsuser.greeting = function(){
-    console.log("hello js user ")
+    // console.log("h₹ello js user ")
 }
 
-console.log(jsuser.greeting())
+// console.log(jsuser.greeting())
 
 const emptyObj = {1: "1"}
 console.log(Object.keys(emptyObj))

@@ -11,7 +11,7 @@ const User = {
     set email(value){
         this._email = value
     } // set says email is for me email is property not method
-    // i will provide you a value and store it in the _email 
+    // li will provide you a value and store it in the _email 
 }
 
 const tea = Object.create(User) //factory function 

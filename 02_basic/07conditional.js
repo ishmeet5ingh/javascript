@@ -1,7 +1,7 @@
 // Nullish coalescing operator (??): null undefined
 let val1;
-// val1 = 5 ?? 10;
-val1 = null ?? 10; // multiple also // atleast give one answer
+val1 = 533 ?? 10;
+// val1 = null ?? null ?? 44; // multiple also // atleast give one answer
 console.log(val1)
 
 // terniary operator

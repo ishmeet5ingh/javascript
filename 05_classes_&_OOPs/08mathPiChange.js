@@ -1,10 +1,16 @@
-const descripter = Object.getOwnPropertyDescriptor(Math, "ceil")
-// console.log(descripter)
+const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
+//The Object.getOwnPropertyDescriptor() method in JavaScript is used to get the descriptor of a property of an object. The descriptor contains details about the property, such as its value, whether it is writable, enumerable(iteratable?), and configurable.
+
+// configurable -------->
+// In the context of property descriptors in JavaScript, the configurable attribute refers to whether the property's attributes (other than its value and writable attribute) can be changed using property descriptor methods like Object.defineProperty() or Object.defineProperties().
+
+console.log("PI :",descripter)
+// console.log(typeof Math) // object
 
 
 // console.log(descripter)
-// Math.PI = 5
-// console.log(Math.PI)
+Math.PI = 5
+console.log(Math.PI)
 
 const chai = {
     name: 'ginger chai',
@@ -34,7 +40,7 @@ const course = {
     price: 5000,
     duration: "5 h",
     renew: function(){
-        console.log(`renew the ${this.name} course`)
+        // console.log(`renew the ${this.name} course`)
     }
 }
 
@@ -45,19 +51,20 @@ const des = Object.getOwnPropertyDescriptor(course, "duration");
 
 for(let [key, value] of Object.entries(course)){
     Object.defineProperty(course, key,{
-        //'Object.defineProperty()' is a method in JavaScript that allows you to add a new property or modify an existing property on an object with more control over its behavior. This method provides fine-grained control over various property attributes, such as enumerability, writability, and configurability.
+        // Object.defineProperty() is a method in JavaScript that allows you to define or modify a property on an object with more control over its behavior and attributes than simple assignment.
 
         writable: false
     })
-    console.log(`${key} : ${value}`)
+    // console.log(`${key} : ${value}`)
 }
 
 for(let [key, value] of Object.entries(course)){
     
     const des = Object.getOwnPropertyDescriptor(course, key);
-    console.log(des)
+    // console.log(des)
     if(typeof value !== "function"){
-        console.log(`${key} : ${value}`)
+        // console.log(`${key} : ${value}`)
+
     }
 }
 

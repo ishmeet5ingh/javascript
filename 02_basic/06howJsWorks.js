@@ -1,8 +1,7 @@
-// js is single threaded  ded language
+// js is single threaded ded language
 
 // falsy values
 // false, 0, -0, BigInt 0n, null, undefined, NaN
-
 
 
 // truthy values

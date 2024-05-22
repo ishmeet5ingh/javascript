@@ -42,8 +42,8 @@ multiby5.power = 2;
 function createUser(username, score) {
   this.username = username;
   this.score = score;
-}
 
+}
 createUser.prototype.increment = function () {
   this.score++;
   return this;
@@ -52,6 +52,7 @@ createUser.prototype.increment = function () {
 createUser.prototype.printMe = function () {
   console.log(`score is ${this.score}`);
 };
+// increment and printMe jo additional properties aayi hai vo btane ka kaam niche line me jo new keyword hai vo krta hai.
 
 const chai = new createUser("chai", 25);
 const tea = new createUser("tea", 250);
@@ -68,7 +69,7 @@ Here's what happens behind the scenes when the　new keyword is used:
 A new object is created: The new keyword initiates the creation of a new javascript　object.
 
 
-A prototype is linked: the newly created object　gets linked to the prototype property of the　constructor function, this meains that it has access to properties and methods defined　on the constructor's prototype.
+A prototype is linked: the newly created object　gets linked to the prototype property of the　constructor function, this means that it has access to properties and methods defined　on the constructor's prototype.
 
 The constructor is called: the constructor function　is called with the specified arguments and this is　bound to the newly created object. If no explicit return value is specified from the constructor, js　assumes this, the newly created object, to be intended　return value.
 
@@ -87,7 +88,7 @@ The constructor is called: the constructor function　is called with the specifi
 // we can add the properties in main object then we can access that from any object (array, function) we are injecting that property to the main object
 
 Object.prototype.ishmeet = () => {
-  console.log(`this property is accessed by every object`);
+  console.log(`this property is accessed by every object`);                                                                                 
 }
 
 const obj = {
@@ -95,6 +96,7 @@ const obj = {
   course: 'BCA',
   roll: '21BCA048'
 }
+
 
 const arr = [1, 3, 5, 6, 6];
 

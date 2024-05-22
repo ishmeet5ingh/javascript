@@ -5,7 +5,9 @@ const gameName = new String("hiteshhc"); // object of string
 // console.log(typeof gameName); //object
 // console.log(typeof name) // string
 // console.log(gameName[0])
+// console.log(name[0])
 // console.log(gameName.toUpperCase())
+// console.log(name.toUpperCase())
 const repocount = 50;
 
 //string interpolation
@@ -14,9 +16,11 @@ const repocount = 50;
 //methods of string
 // console.log(gameName.charAt(1))
 // console.log(gameName.indexOf('t'))
-// const newString = gameName.substring(0, 4)
-const newString2 = gameName.slice(-7, 7)
-// console.log(newString2)
+const newString = gameName.substring(1, 3) // can't take -values include first exclude second
+const newString2 = gameName.slice(1, -1) // +ve values same as above but -ve +ve
+console.log(newString)
+console.log(newString2)
+
 
 const newStringOne = "      hitesh      c   "
 // console.log(newStringOne)
@@ -27,4 +31,4 @@ const url = "https:/hitesh.com/hitesh%20choudhary";
 // console.log(url.replace('%20', '_'))
 // console.log(url.includes('hitesh'))
 
-// console.log(url.split('/'))// spliting by '/' this
+console.log(url.split('/'))// spliting by '/' this

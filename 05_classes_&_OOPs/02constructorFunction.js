@@ -27,8 +27,8 @@ console.log(userOne instanceof User) // check the instance
 
 // -> ( new keyword)
 //   1) when new keyword is used empty object(instance) is created.
-//   2) constructor function is called with new keyword
-//      it pack all the arguments with and give it to us.
-//   3) all this properties are injected in constructor fnc.
+//   2) constructor function is called because of new keyword
+//      it pack all the arguments in constructor function and give it to us.
+//   3) ye aapka jo 'this' keyword hai jo bhi aapne arguments likhe hai vo sb isme inject ho jate hai
 //   4) we get in function.
 

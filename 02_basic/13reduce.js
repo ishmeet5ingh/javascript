@@ -6,7 +6,9 @@ const initialvalue = 0;
 // -> accomulate values of array in one variable
 
 const sumWithInitial = array1.reduce((accumulator, currval) =>{
-    console.log(accumulator)
+    console.log(`accumulator :${accumulator}`)
+    console.log(`currval :${currval}`)
+    
     return accumulator + currval // currval adds in the accumulator
 }, initialvalue) 
 

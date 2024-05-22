@@ -22,7 +22,7 @@ console.log(Number.MIN_VALUE)
 // console.log(Math)
 // console.log(Math.abs(-4)) // rm -
 // console.log(Math.round(4.3)) // round off
-console.log(Math.ceil(4.1)) // ceiling value of a n
+// console.log(Math.ceil(4.1)) // ceiling value of a n
 // console.log(Math.floor(3.5)) // floor value
 // console.log(Math.sqrt(5))
 // console.log(Math.min(1, 4))
